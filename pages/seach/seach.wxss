@@ -1,0 +1,5 @@
+.seach{display:-webkit-flex;display:flex;padding:0 5px;}
+input[type="text"]{flex:1;border:1px solid #E7E7E7;height: 38px;font-size:40rpx;border-radius:6px;padding-left:10px;color:#666;}
+.seach button{width:100px;line-height: 38px;}
+.seach_name{font-size:38rpx;padding:10px 5px;}
+.seach_name text{color:#666;}

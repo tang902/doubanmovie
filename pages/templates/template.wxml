@@ -1,0 +1,29 @@
+<template name="movieList">
+  <block wx:for="{{ movieData }}">
+    <view class="movie_item" catchtap="getArticle" id="{{item.id}}">
+      <view class="item_img">
+        <image src="{{item.images.large}}"></image>
+      </view>
+      <view class="item_content">
+        <view class="item_moivecnname">名称：
+          <text>{{item.title}}</text>
+        </view>
+        <view class="item_moiveenname">别名：
+          <text>{{item.original_title}}</text>
+        </view>
+        <view class="item_moivedirectors">导演：
+          <text wx:for="{{item.directors}}" wx:for-item="directorsName"> {{directorsName.name}}</text>
+        </view>
+        <view class="item_moivecasts">演员：
+          <text wx:for="{{item.casts}}" wx:for-item="castsName"> {{castsName.name}}</text>
+        </view>
+        <view class="item_moivegenres">类型：
+          <text wx:for="{{item.genres}}" wx:for-item="genresName"> {{genresName}}</text>
+        </view>
+        <view class="item_moiveyear">年份：
+          <text>{{item.year}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>

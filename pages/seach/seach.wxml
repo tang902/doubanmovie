@@ -1,0 +1,6 @@
+<view>
+  <view class="seach"><input type="text" placeholder="搜索的电影" value=""  bindinput="seachFocus" cursor-spacing="10px"></input><button catchtap="seachMovie">搜索</button></view>
+  <view class="seach_name">搜索结果：<text>{{ seachKeywords }}</text></view>
+</view>
+<import src="../templates/template.wxml" />
+<template is="movieList" data="{{movieData}}" />

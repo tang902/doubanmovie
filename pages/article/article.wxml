@@ -1,0 +1,16 @@
+<view class="article"  wx:if="{{articleBoolean}}">
+  <view class="article_top">
+    <view class="article_img"><image src="{{articleData.image}}" mode='aspectFit'></image></view>
+    <view class="article_content">
+      <view>电影名：{{articleData.title}}</view>
+      <view>导演：<text wx:for="{{articleData.author}}">{{item.name}}  </text></view>
+      <view>类型：<text wx:for="{{articleData.attrs.movie_type}}">{{item}}  </text></view>
+      <view>演员：<text wx:for="{{articleData.attrs.cast}}">{{item}}  </text></view>
+      <view>年份：<text wx:for="{{articleData.attrs.year}}">{{item}}</text></view>
+    </view>
+    <view class="article_introduce">
+      <view>电影简介：</view>
+      <view class="article_introduce_content">{{articleData.summary}}</view>
+    </view>
+  </view>
+</view>

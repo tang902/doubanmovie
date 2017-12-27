@@ -1,0 +1,8 @@
+
+swiper{
+  width:100%;
+  margin-bottom:10px;
+}
+swiper-item image{
+  width:750rpx;
+}

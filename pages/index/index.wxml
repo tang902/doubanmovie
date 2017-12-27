@@ -1,0 +1,15 @@
+<view class="scroll">
+  <swiper autoplay="true" interval="5000" circular="true">
+    <swiper-item>
+      <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" width="100%" height="100%"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg" width="100%" height="100%"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" width="100%" height="100%"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<import src="../templates/template.wxml" />
+<template is="movieList" data="{{movieData}}" />
