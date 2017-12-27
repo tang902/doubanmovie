@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/top250/top250",
+    "pages/seach/seach",
+    "pages/article/article"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"black"
+  },
+  "tabBar":{
+    "selectedColor":"#333",
+    "color":"#999",
+    "backgroundColor":"#f6f6f6",
+    "list":[
+      {"iconPath":"./img/icon/homepage.png","selectedIconPath":"./img/icon/homepage_fill.png","pagePath":"pages/index/index","text":"首页"},
+      {"iconPath":"./img/icon/interactive.png","selectedIconPath":"./img/icon/interactive_fill.png","pagePath":"pages/top250/top250","text":"Top250"},
+      {"iconPath":"./img/icon/search.png","selectedIconPath":"./img/icon/search_fill.png","pagePath":"pages/seach/seach","text":"搜索"}
+    ]
+  },
+  "debug":true
+}
