@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.movie_item{
+  display:flex;
+  height:400rpx;
+  background: #999;
+  border-bottom:2px solid #fff;
+}
+.movie_item:last-child{border-bottom:0;}
+.item_img{
+  width:300rpx;
+}
+.item_img image{
+  width:300rpx;
+  height:400rpx;
+}
+.item_content{
+  width:450rpx;
+  color:#fff;
+  padding:10rpx;
+}
+.item_content text{diaplay:block;}
+.item_moivecnname{
+  font-size:32rpx;
+}
+.item_moiveenname{
+  font-size:28rpx;
+}
+.item_moivedirectors,.item_moivecasts,.item_moivegenres,.item_moiveyear{
+  font-size:24rpx;
+}
